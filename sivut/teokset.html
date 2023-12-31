@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Paratiisi | Teokset</title>
+    <link rel="stylesheet" href="../css/teokset_tyyli.css">
+    <link rel="icon" href="../media/img/icon.png" type="image/x-icon">
+</head>
+    <body>
+        <ul>
+          <li id="vasen"><a href="../index.html#waypoint">Koti</a></li>
+          <li id="vasen"><a class="active" href="../sivut/teokset.html">Teokset</a></li>
+          <li id="vasen"><a href="../sivut/kontaktit.html">Yhteystiedot</a></li>
+          <li class="kirjautuminen" id="oikea"><button class="kirjautumisnapit" id="luo_tili">Luo tili</button></li>
+          <li class="kirjautuminen" id="oikea"><button class="kirjautumisnapit" id="kirjaudu_tili">Kirjaudu</button></li>
+          <li class="kayttajanav" id="oikea"></li>
+        </ul>
+
+        <div class="slideshow-container">
+        
+            <div class="mySlides fade">
+              <img src="../media/img/teokset/esitelmä/house.jpg" style="width:100%">
+              <div class="text">Topi Lehto</div>
+            </div>
+        
+            <div class="mySlides fade">
+              <img src="../media/img/teokset/esitelmä/fishermen.jpg" style="width:100%">
+              <div class="text">Sofia Mäkelä</div>
+            </div>
+        
+            <div class="mySlides fade">
+                <img src="../media/img/teokset/esitelmä/lifestyle.jpg" style="width:100%">
+                <div class="text">Elias Virtanen</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="../media/img/teokset/esitelmä/the-needle.jpg" style="width:100%">
+                <div class="text">Venla Koskinen</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="../media/img/teokset/esitelmä/bathroom.jpg" style="width:100%">
+                <div class="text">Eetu Nieminen</div>
+            </div>
+        
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div class="galleria" id="galleria"></div>
+
+        <div id="lisaaContent">
+            <button onclick="siirryTeoksiin()">Siirry kaikkiin teoksiin</button>
+        </div>
+
+
+        <!-- KUVA KATSAUS -->
+        <div id="id04" class="modal">
+            <form class="kuva-content" id="kuva-content">
+                <div class="grid-container">
+                    <div class="item1">
+                        <h1 id="teoksenNimi"></h1>
+                    </div>
+                    <div class="item2">
+                        <p id="infoKentta"></p>
+                    </div>
+                    <div class="item3">
+                        <img id="fullImage" src="" alt="Full Image">
+                    </div>
+                    <div class="item4">
+                        <div class="chat-window" id="chatWindow">
+                            <div class="chat-header">Kommentit</div>
+                            <div class="chat-body" id="chatBody"></div>
+                            <div class="chat-input" id="chatInput">
+                              <input type="text" id="messageInput" placeholder="Kirjoita jotain kivaa...">
+                              <button onclick="sendMessage(event)">&#10148;</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- LUO TILI -->
+        <div id="id01" class="modal">
+            <form class="modal-content" id="modal-content">
+                <div class="container">
+                    <h1>Luo tili</h1>
+                    <p>Täytä tarvittavat käyttäjä tiedot</p>
+                    <hr>
+                    <label for="username"><b>Käyttäjänimi</b></label>
+                    <input type="text" id="username" placeholder="Käyttäjänimi (ei pakollinen)" name="username" autocomplete="username">
+
+                    <label for="email"><b>Sähköposti</b></label>
+                    <input type="text" id="email" placeholder="Anna sähköposti" name="email" required autocomplete="email">
+                    
+                    <label for="psw"><b>Salasana</b></label>
+                    <input type="password" id="psw" placeholder="Anna salasana" name="psw" required>
+                    
+                    <label for="psw-repeat"><b>Toista salasana</b></label>
+                    <input type="password" id="psw-repeat" placeholder="Toista salasana" name="psw-repeat" required>
+                    <p id="puutekentta"></p>
+                    <p>Luomalla tilin hyväksyt meidän <a href="../sivut/evaste.html" target="blank" style="color:dodgerblue">Evästeet</a>.</p>
+                  
+                    <div class="clearfix">
+                      <button type="button" id="luo_peru" class="cancelbtn">Palaa</button>
+                      <button type="submit" id="signupbtn" class="signupbtn">Luo tili</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- TILI KATSAUS -->
+        <div id="id02" class="modal">
+            <form class="katsaus-content" id="katsaus-content">
+                <div class="container">
+                    <h1 id="kayttajanimi"></h1>
+                    <p>Käyttäjä Tiedot</p>
+                    <hr>
+                    <b>Käyttäjänimi</b>
+                    <p id="kayttajanimi_muokattava"></p>
+
+                    <b>Sähköposti</b>
+                    <p id="kayttajasposti"></p>
+                    
+                    <b>Salasana</b>
+                    <p id="kayttajasala"></p>
+                    
+                    <p>Jos haluat muuttaa tietoja lähetämme sinulle <a href="../sivut/muutos.html" target="blank" style="color:dodgerblue">Sähköpostin</a>.</p>
+                  
+                    <div class="clearfix">
+                      <button type="button" id="palaa" class="signupbtn">Palaa</button>
+                      <button type="button" id="kirjaudu_ulos" class="cancelbtn">Kirjaudu ulos</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- KIRJAUTUMINEN -->
+        <div id="id03" class="modal">
+            <form class="kirjautumis-content" id="kirjautumis-content">
+                <div class="container">
+                    <label for="email"><b>Sähköposti</b></label>
+                    <input type="text" placeholder="Anna sähköposti" name="email" autocomplete="email" required>
+                    
+                    <label for="psw"><b>Salasana</b></label>
+                    <input type="password" placeholder="Anna salasana" name="psw" required>
+                    <p id="puutekentta_kir"></p>
+                    <p id="unohdus">Unohditko salasanasi, voit tästä pyytää uuden <a href="sivut/muutos.html" target="blank" style="color:dodgerblue">Sähköpostiisi</a>.</p>
+                  
+                    <div class="clearfix">
+                      <button type="button" id="palaa_kir" class="cancelbtn">Palaa</button>
+                      <button type="submit" id="kirjaudu_sisaan" class="signupbtn">Kirjaudu sisään</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+        <script type="text/javascript" src="../java/teokset_java.js"></script>
+    </body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Paratiisi | Yhteystiedot</title>
+    <link rel="stylesheet" href="../css/kontakti_tyyli.css">
+    <link rel="icon" href="../media/img/icon.png" type="image/x-icon">
+</head>
+<body>
+    <ul>
+        <li id="vasen"><a href="../index.html#waypoint">Koti</a></li>
+        <li id="vasen"><a href="../sivut/teokset.html">Teokset</a></li>
+        <li id="vasen"><a class="active" href="kontaktit.html">Yhteystiedot</a></li>
+        <li class="kirjautuminen" id="oikea"><button class="kirjautumisnapit" id="luo_tili">Luo tili</button></li>
+        <li class="kirjautuminen" id="oikea"><button class="kirjautumisnapit" id="kirjaudu_tili">Kirjaudu</button></li>
+        <li class="kayttajanav" id="oikea"></li>
+    </ul>
+    <header><h1>Yhteystiedot</h1></header>
+    <h2>Sivuston Perustajat</h2>
+    <section class="flex-wrap">
+
+        <div>
+            <img src="../media/img/ihmiset/man_1.jpg" alt="Perustaja 1">
+            <p><strong>Frans-Emil Vuori</strong></p>
+            <p><strong>~Toimitusjohtaja~</strong></p>
+            <p>puh: +358 401234567</p>
+            <p>Sähköposti: Frans-Emil.Vuori@seamk.fi</p>
+        </div>
+
+        <div>
+            <img src="../media/img/ihmiset/man_2.png" alt="Perustaja 2">
+            <p><strong>Joe Biden</strong></p>
+            <p><strong>~Vastuullisuusjohtaja~</strong></p>
+            <p>puh: +358 401234567</p>
+            <p>Sähköposti: Joe.Biden@seamk.fi</p>
+        </div>
+
+        <div>
+            <img src="../media/img/ihmiset/man_3.png" alt="Perustaja 3">
+            <p><strong>Sauli Niinistö</strong></p>
+            <p><strong>~Henkilöstöjohtaja~</strong></p>
+            <p>puh: +358 401234567</p>
+            <p>Sähköposti: Sauli.Niinistö@seamk.fi</p>
+        </div>
+        
+    </section>
+
+    <h2>Sivuston Moderaattorit</h2>
+
+    <section class="flex-wrap">
+
+        <div>
+            <img src="../media/img/ihmiset/woman_1.png" alt="Perustaja 1">
+            <p><strong>Eeva Järvinen</strong></p>
+            <p>puh: +358 401234567</p>
+            <p>Sähköposti: Eeva.Järvinen@seamk.fi</p>
+        </div>
+
+        <div>
+            <img src="../media/img/ihmiset/woman_2.png" alt="Perustaja 2">
+            <p><strong>Maija Mäkinen</strong></p>
+            <p>puh: +358 401234567</p>
+            <p>Sähköposti: Maija.Mäkinen@seamk.fi</p>
+        </div>
+
+        <div>
+            <img src="../media/img/ihmiset/man_4.png" alt="Perustaja 3">
+            <p><strong>Mikko Virtanen</strong></p>
+            <p>puh: +358 401234567</p>
+            <p>Sähköposti: Mikko.Virtanen@seamk.fi</p>
+        </div>
+        
+        <div>
+            <img src="../media/img/ihmiset/woman_3.png" alt="Perustaja 2">
+            <p><strong>Elina Lahtinen</strong></p>
+            <p>puh: +358 401234567</p>
+            <p>Sähköposti: Elina.Lahtinen@seamk.fi</p>
+        </div>
+
+        <div>
+            <img src="../media/img/ihmiset/man_5.png" alt="Perustaja 1">
+            <p><strong>Tuomas Koskinen</strong></p>
+            <p>puh: +358 401234567</p>
+            <p>Sähköposti: Tuomas.Koskinen@seamk.fi</p>
+        </div>
+
+        <div>
+            <img src="../media/img/ihmiset/man_6.png" alt="Perustaja 3">
+            <p><strong>Antti Laine</strong></p>
+            <p>puh: +358 401234567</p>
+            <p>Sähköposti: Antti.Mäkinen@seamk.fi</p>
+        </div>
+        
+    </section>
+        <!-- LUO TILI -->
+        <div id="id01" class="modal">
+            <form class="modal-content" id="modal-content">
+                <div class="container">
+                    <h1>Luo tili</h1>
+                    <p>Täytä tarvittavat käyttäjä tiedot</p>
+                    <hr>
+                    <label for="username"><b>Käyttäjänimi</b></label>
+                    <input type="text" id="username" placeholder="Käyttäjänimi (ei pakollinen)" name="username" autocomplete="username">
+
+                    <label for="email"><b>Sähköposti</b></label>
+                    <input type="text" id="email" placeholder="Anna sähköposti" name="email" required autocomplete="email">
+                    
+                    <label for="psw"><b>Salasana</b></label>
+                    <input type="password" id="psw" placeholder="Anna salasana" name="psw" required>
+                    
+                    <label for="psw-repeat"><b>Toista salasana</b></label>
+                    <input type="password" id="psw-repeat" placeholder="Toista salasana" name="psw-repeat" required>
+                    <p id="puutekentta"></p>
+                    <p>Luomalla tilin hyväksyt meidän <a href="../sivut/evaste.html" target="blank" style="color:dodgerblue">Evästeet</a>.</p>
+                  
+                    <div class="clearfix">
+                      <button type="button" id="luo_peru" class="cancelbtn">Palaa</button>
+                      <button type="submit" id="signupbtn" class="signupbtn">Luo tili</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- TILI KATSAUS -->
+        <div id="id02" class="modal">
+            <form class="katsaus-content" id="katsaus-content">
+                <div class="container">
+                    <h1 id="kayttajanimi"></h1>
+                    <p>Käyttäjä Tiedot</p>
+                    <hr>
+                    <b>Käyttäjänimi</b>
+                    <p id="kayttajanimi_muokattava"></p>
+
+                    <b>Sähköposti</b>
+                    <p id="kayttajasposti"></p>
+                    
+                    <b>Salasana</b>
+                    <p id="kayttajasala"></p>
+                    
+                    <p>Jos haluat muuttaa tietoja lähetämme sinulle <a href="../sivut/muutos.html" target="blank" style="color:dodgerblue">Sähköpostin</a>.</p>
+                  
+                    <div class="clearfix">
+                      <button type="button" id="palaa" class="signupbtn">Palaa</button>
+                      <button type="button" id="kirjaudu_ulos" class="cancelbtn">Kirjaudu ulos</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- KIRJAUTUMINEN -->
+        <div id="id03" class="modal">
+            <form class="kirjautumis-content" id="kirjautumis-content">
+                <div class="container">
+                    <label for="email"><b>Sähköposti</b></label>
+                    <input type="text" placeholder="Anna sähköposti" name="email" autocomplete="email" required>
+                    
+                    <label for="psw"><b>Salasana</b></label>
+                    <input type="password" placeholder="Anna salasana" name="psw" required>
+                    <p id="puutekentta_kir"></p>
+                    <p id="unohdus">Unohditko salasanasi, voit tästä pyytää uuden <a href="sivut/muutos.html" target="blank" style="color:dodgerblue">Sähköpostiisi</a>.</p>
+                  
+                    <div class="clearfix">
+                      <button type="button" id="palaa_kir" class="cancelbtn">Palaa</button>
+                      <button type="submit" id="kirjaudu_sisaan" class="signupbtn">Kirjaudu sisään</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    <footer>
+        <p>Päivitetty 20.01.2023</p>
+    </footer>
+            <script type="text/javascript" src="../java/kontakti_java.js"></script>
+</body>
+</html>
