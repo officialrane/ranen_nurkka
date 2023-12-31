@@ -1,0 +1,476 @@
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: 0 0;
+}
+
+.mySlides img {
+  object-fit: cover;
+  width: 100%;
+  height: 65vh;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 38px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.5);
+  text-shadow:
+    -1px -1px 0 rgba(0, 0, 0, 0.5),
+    1px -1px 0 rgba(0, 0, 0, 0.5),
+    -1px 1px 0 rgba(0, 0, 0, 0.5),
+    1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.teosImg{
+  max-width: 400px;
+  max-height: 400px;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  clip-path: circle(50%)
+}
+
+.galleria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.galleria img {
+  margin: 10px;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    font-size: 28px;
+ }
+ p {
+    text-align: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+   }
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  #oikea{
+    float: right;
+  }
+  #vasen {
+    float: left;
+    border-right: 3px solid #bbb;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+    color: rgb(255, 243, 192)
+  }
+  
+ .active {
+    background-color: #4CAF50;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+ ::-webkit-scrollbar-thumb {
+    background: rgb(255, 166, 0); 
+    border-radius: 10px;
+  }
+  
+ ::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 213, 0); 
+  }
+ 
+ h1, h2 {
+    text-align: center;
+    color: #333;
+ }
+ 
+ .flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ }
+ 
+ .flex-wrap > div {
+   text-align: center;
+   margin: 3rem;
+   height: 60vh;
+ }
+ 
+ .flex-wrap img {
+   width: 300px;
+   height: 300px;
+   border-radius: 50%;
+ }
+ 
+ .flex-wrap p {
+   margin: 10px;
+   font-family:'Times New Roman', Times, serif
+ }
+ 
+ footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+ }
+
+
+ input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.kirjautumisnapit {
+  font-size: 30px;
+  background-color: #04AA6D;
+  color: white;
+  padding: 13px 40px;
+  margin: 0 0;
+  border: none;
+  border-left: 3px solid #bbb;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.kirjautumisnapit:hover {
+  background-color: #037249;
+  color: rgb(255, 243, 192)
+}
+
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+#puutekentta, #puutekentta_kir {
+  font-size: 90%;
+  color: #f44336;
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 0% 25%;
+  border: 1px solid #888;
+  width: 50%;
+  border-radius: 10px;
+}
+
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+.katsaus-content {
+  background-color: #fefefe;
+  margin: 0% 20%;
+  border: 1px solid #888;
+  width: 60%;
+  border-radius: 10px;
+}
+
+#kayttajasposti, #kayttajasala, #kayttajanimi_muokattava{
+  text-align: left;
+}
+
+.kirjautumis-content {
+  background-color: #fefefe;
+  margin: 10% 30%;
+  border: 1px solid #888;
+  width: 40%;
+  border-radius: 10px;
+}
+
+#unohdus{
+  display: none;
+}
+
+
+
+
+
+
+
+
+.kuva-content {
+  border-radius: 10px;
+  background-color: #fefefe;
+  margin: 0% 10%;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.item1 { 
+  grid-area: header; 
+  overflow: hidden;
+}
+.item2 { grid-area: info; }
+.item3 { grid-area: main; }
+.item4 { 
+  grid-area: right; 
+}
+.grid-container {
+  padding: 16px;
+  display: grid;
+  grid-template-areas:
+    'header info info right right right'
+    'main   main main right right right'
+    'main   main main right right right';
+  grid-template-columns: 3fr 2fr 2fr repeat(3, 1fr);
+
+  align-content: center;
+  gap: 10px;
+}
+
+#fullImage{
+  max-width: 50vw;
+  max-height: 60vh;
+}
+
+.item1 h1{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  float:right;
+  overflow:hidden;
+  font-size: calc(3vw)
+}
+.item2 p{
+  float: left;
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  font-size: calc(1.5vw)
+}
+
+ 
+
+
+
+.chat-window {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  float: left;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #ffffff, #e0e0e0); 
+}
+
+.chat-header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: calc(2vw)
+}
+
+.chat-body {
+  flex-grow: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 10px;
+}
+
+.chat-input {
+  display: flex;
+  padding: 10px;
+  padding-bottom: 0%;
+  width: 100%;
+}
+
+.chat-input input {
+  flex-grow: 1;
+  padding: 5px;
+  margin-top: 25px;
+  margin-right: 5px;
+  height: 35px;
+}
+
+.chat-input button {
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
+  text-align: center;
+  clip-path: circle(40%)
+}
+
+.viesti{
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+#kirhuom{
+  text-align: center;
+  background-color: #4CAF50;
+  font-size: 30px;
+  color: white;
+  font-size: calc(2vw)
+}
+
+#lisaaContent{
+  background-color: #333;
+  padding: 5rem;
+  padding-bottom: 10rem;
+  text-align: center;
+  color: white;
+}
+
+#lisaaContent button{
+  width: 35vw;
+  height: 7vw;
+  font-size: calc(2vw)
+}
