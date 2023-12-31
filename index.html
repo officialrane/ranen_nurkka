@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Paratiisi</title>
+    <link rel="stylesheet" href="css/index_tyyli.css">
+    <link rel="icon" href="media/img/icon.png" type="image/x-icon">
+</head>
+    <body>
+        <div id="video-container">
+            <video autoplay loop muted>
+                <source src="media/video/Otsikko_video.mkv" type="video/mp4">
+                Selaimesi ei tue videota.
+            </video>
+            <div id="overlay-text">
+                3D PARATIISI
+            </div>
+            <button id="overlay-button" onclick="scrollaaKohtaan(document.getElementById('waypoint'))">&#x2193;</button>
+        </div>
+        <div id="waypoint"></div>
+        <ul>
+          <li id="vasen"><a class="active" href="index.html#waypoint">Koti</a></li>
+          <li id="vasen"><a href="sivut/teokset.html">Teokset</a></li>
+          <li id="vasen"><a href="sivut/kontaktit.html">Yhteystiedot</a></li>
+          <li class="kirjautuminen" id="oikea"><button class="kirjautumisnapit" id="luo_tili">Luo tili</button></li>
+          <li class="kirjautuminen" id="oikea"><button class="kirjautumisnapit" id="kirjaudu_tili">Kirjaudu</button></li>
+          <li class="kayttajanav" id="oikea"></li>
+        </ul>
+        <div id="content">
+            <h1>Tervetuloa 3D PARATIISIIN!</h1>
+    
+            <section id="mita_on_3d">
+                <h2>Mitä on 3D-mallinnus?</h2>
+                <p>
+                    3D-mallinnus on kiehtova taide ja tekniikka, joka mahdollistaa kolmiulotteisten digitaalisten mallien luomisen. Tämä monipuolinen tekniikka avaa oven luovalle ilmaisulle, 
+                    mahdollistaen vaikuttavien visuaalisten elementtien luomisen animoinnissa ja virtuaalisissa maailmoissa. 3D-mallinnus voi kattaa laajan kirjon sovelluksia, kuten pelisuunnittelu, elokuvatuotanto, arkkitehtuuri ja tuotesuunnittelu.
+                    3D-mallinnus on prosessi, jossa luodaan digitaalisia malleja kolmiulotteisesta tilasta. Tämä tapahtuu tietokoneavusteisen suunnittelu ohjelmien avulla (esim. ilmainen <a href="https://www.blender.org/" target="blank">Blender</a>), jotka mahdollistavat monimutkaisten muotojen ja rakenteiden luomisen. 
+                    3D-mallinnusta käytetään useilla eri aloilla tuomassa eloa ja syvyyttä visuaaliseen ilmaisuun.
+                </p>
+            </section>
+            
+            <div class="sisalto-container">
+                <section id="aplikaatio">
+                    <img src="media/img/mansikka.jpg" alt="Kuva" id="mansikka">
+                    <h2>3D-mallinnus luo mahdollisuuksia monille aloille</h2>
+
+                    <h3>Pelisuunnittelu</h3>
+                    <p>Pelisuunnittelijat voivat hyödyntää 3D-mallinnusta pelimaailmojen, hahmojen ja esineiden luomiseen, tarjoten pelaajille immersiivisiä ja vaikuttavia kokemuksia. Yksityiskohtaiset maisemat ja tarkat hahmojen mallinnukset tuovat peleihin eloisuutta 
+                        ja syvyyttä, luoden unohtumattomia pelikokemuksia. Tämä teknologia mahdollistaa pelien kehittämisen, jotka eivät ainoastaan tarjoa viihdettä, vaan myös kiehtovat pelaajia visuaalisesti ja tarinallisesti.</p>
+                
+                    <h3>Elokuva- ja animaatioteollisuus</h3>
+                    <p>
+                        Elokuvatuotannossa 3D-mallinnus on olennainen työkalu, joka mahdollistaa vaikuttavien visuaalisten efektien, virtuaalisten maailmojen ja hahmosuunnittelun. Tämä tekniikka avaa oven elokuvantekijöille luoda realistisia ja 
+                        fantastisia elementtejä saumattomasti yhteen, tarjoten katsojille unohtumattomia visuaalisia elämyksiä.</p>
+                    <img src="media/img/reflection.jpg" alt="Kuva" id="reflection">
+                    <h3>Arkkitehtuuri</h3>
+                    <p>Arkkitehtuurissa 3D-mallinnus on keskeinen työkalu, joka tarjoaa arkkitehdeille mahdollisuuden luoda virtuaalisia malleja rakennuksista ja maisemista. Tämä mahdollistaa suunnitelmien elävöittämisen ja syventämisen, 
+                        antaen arkkitehdeille tarkemman käsityksen suunnitelluista rakennuksista ennen niiden fyysistä rakentamista. Visualisointi virtuaalisissa malleissa auttaa tekemään parempia päätöksiä suunnitteluprosessin aikana.</p>
+                
+                    <h3 id="tuotesuunnittelu">Tuotesuunnittelu</h3>
+                    <p>
+                        Tuotesuunnittelussa 3D-mallinnus toimii tehokkaana työkaluna, joka tarjoaa tuotesuunnittelijoille laajat mahdollisuudet suunnitella ja prototypoida tuotteita ennen niiden valmistamista. Tämä prosessi tuo mukanaan useita etuja, 
+                        kuten suunnitteluprosessin nopeuttamisen, tarkkuuden parantamisen ja yksityiskohtien hallinnan optimoinnin. 3D-mallinnuksen avulla tuotesuunnittelijat voivat luoda virtuaalisia malleja suunnittelemistaan tuotteista kolmiulotteisessa tilassa. 
+                        Tämä mahdollistaa tuotteen tarkemman tarkastelun kaikista kulmista ja antaa suunnittelijoille realistisen käsityksen siitä, miltä tuote näyttää valmiina.</p>
+                </section>
+            </div>
+    
+            <section id="yhteisö">
+                <h2>Yhteisö ja Jakaminen</h2>
+                <p>
+                    3D PARATIISI on dynaaminen yhteisö, missä intohimo 3D-mallinnukseen on meidän yhteinen liima. Liity joukkoomme, sukella syvälle keskusteluihin, jaa luomuksesi ainutlaatuisessa ympäristössä ja ammenna visuaalista viisautta muiden asiantuntijoiden luomuksista. 
+                    Meidän yhteisömme ei ole vain verkosto – se on tukipilari, joka kantaa sinua matkallasi syvemmälle 3D-maailman monimuotoisuuteen ja inspiraation lähde, joka sytyttää luovuutesi uusiin ulottuvuuksiin! 🌟🚀 #3DParatiisi #Yhteisö #Jakaminen #3Dmallinnus #Luovuus #Inspiraatio
+                </p>
+            </section>
+    
+            <section id="tutustu">
+                <h2>Tutustu Sivustoon</h2>
+                <p>
+                    Tervetuloa 3D PARATIISIin, paikkaan, missä intohimomme 3D-mallinnusta kohtaan kukoistaa! Tutustu syvemmälle sivustomme tarjoamiin resursseihin, oppaisiin ja inspiraatioon. Olemme sitoutuneet tarjoamaan laadukasta sisältöä kaikille, jotka haluavat oppia lisää 3D-mallinnuksesta 
+                    tai kehittää taitojaan tällä jännittävällä alueella. Olitpa vasta aloittamassa matkaasi 3D-maailmassa tai jo kokenut tekijä, löydät täältä kaiken tarvitsemasi tukeaksesi luovuuttasi ja syventyäksesi 3D-mallinnuksen saloihin. Tule mukaan oppimaan, jakamaan ja inspiroitumaan!
+                </p>
+            </section>
+    
+            <section id="mita_loytyy">
+                <h2>Mitä Löydät Täältä?</h2>
+                <menu>
+                    <li>
+                        <strong>Perusteet ja Edistyneet Tekniikat:</strong>
+                        Sukella 3D-mallinnuksen maailmaan oppiaksesi perusteet ja edistyneemmät tekniikat.
+                    </li>
+                    <li>
+                        <strong>Inspiratiota Projekteista:</strong>
+                        Tutustu kiehtoviin 3D-projekteihin ja niiden tarinoihin.
+                    </li>
+                    <li>
+                        <strong>Keskustele, Jaa, Opi:</strong>
+                        Yhteisössämme voit liittyä vilkkaaseen keskusteluun, jakaa omia projektejasi ja oppia muiden asiantuntijoilta.
+                    </li>
+                    <li>
+                        <strong>Tekniikoiden Syventäminen:</strong>
+                        Etsitkö syvällisempää tietoa tietystä 3D-mallinnuksen tekniikasta?
+                    </li>
+                    <li>
+                        <strong>Luovuuden Huippuhetket:</strong>
+                        Koe luovuuden huippuhetkiä tutustumalla upeisiin 3D-projekteihin.
+                    </li>
+                    <li>
+                        <strong>Askartelua Aloittelijoille:</strong>
+                        Jos olet vasta aloittamassa 3D-mallinnusta, löydät artikkeleistamme askarteluvinkkejä ja ohjeita.
+                    </li>
+                    <li>
+                        <strong>Taustatarinoita Projekteista:</strong>
+                        Syvennä ymmärrystäsi 3D-projekteista lukemalla niiden takana olevat tarinat.
+                    </li>
+                    <li>
+                        <strong>Eksklusiiviset Tekniikat:</strong>
+                        Tutustu eksklusiivisiin 3D-mallinnustekniikoihin, joita esittelemme artikkeleissamme.
+                    </li>
+                    <li>
+                        <strong>Yhteisön Vinkit ja Niksit:</strong>
+                        Yhteisömme jakaa arvokkaita vinkkejä ja niksejä.
+                    </li>
+                    <li>
+                        <strong>Kehittyvät Trendit:</strong>
+                        Pysy ajan tasalla 3D-mallinnuksen kehittyvistä trendeistä.
+                    </li>
+                </menu>
+            </section>
+        </div>
+
+
+        <!-- LUO TILI -->
+        <div id="id01" class="modal">
+            <form class="modal-content" id="modal-content">
+                <div class="container">
+                    <h1>Luo tili</h1>
+                    <p>Täytä tarvittavat käyttäjä tiedot</p>
+                    <hr>
+                    <label for="username"><b>Käyttäjänimi</b></label>
+                    <input type="text" id="username" placeholder="Käyttäjänimi (ei pakollinen)" name="username" autocomplete="username">
+
+                    <label for="email"><b>Sähköposti</b></label>
+                    <input type="text" id="email" placeholder="Anna sähköposti" name="email" required autocomplete="email">
+                    
+                    <label for="psw"><b>Salasana</b></label>
+                    <input type="password" id="psw" placeholder="Anna salasana" name="psw" required>
+                    
+                    <label for="psw-repeat"><b>Toista salasana</b></label>
+                    <input type="password" id="psw-repeat" placeholder="Toista salasana" name="psw-repeat" required>
+                    <p id="puutekentta"></p>
+                    <p>Luomalla tilin hyväksyt meidän <a href="sivut/evaste.html" target="blank" style="color:dodgerblue">Evästeet</a>.</p>
+                  
+                    <div class="clearfix">
+                      <button type="button" id="luo_peru" class="cancelbtn">Palaa</button>
+                      <button type="submit" id="signupbtn" class="signupbtn">Luo tili</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- TILI KATSAUS -->
+        <div id="id02" class="modal">
+            <form class="katsaus-content" id="katsaus-content">
+                <div class="container">
+                    <h1 id="kayttajanimi"></h1>
+                    <p>Käyttäjä Tiedot</p>
+                    <hr>
+                    <b>Käyttäjänimi</b>
+                    <p id="kayttajanimi_muokattava"></p>
+
+                    <b>Sähköposti</b>
+                    <p id="kayttajasposti"></p>
+                    
+                    <b>Salasana</b>
+                    <p id="kayttajasala"></p>
+                    
+                    <p>Jos haluat muuttaa tietoja lähetämme sinulle <a href="sivut/muutos.html" target="blank" style="color:dodgerblue">Sähköpostin</a>.</p>
+                  
+                    <div class="clearfix">
+                      <button type="button" id="palaa" class="signupbtn">Palaa</button>
+                      <button type="button" id="kirjaudu_ulos" class="cancelbtn">Kirjaudu ulos</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- KIRJAUTUMINEN -->
+        <div id="id03" class="modal">
+            <form class="kirjautumis-content" id="kirjautumis-content">
+                <div class="container">
+                    <label for="email"><b>Sähköposti</b></label>
+                    <input type="text" placeholder="Anna sähköposti" name="email" autocomplete="email" required>
+                    
+                    <label for="psw"><b>Salasana</b></label>
+                    <input type="password" placeholder="Anna salasana" name="psw" required>
+                    <p id="puutekentta_kir"></p>
+                    <p id="unohdus">Unohditko salasanasi, voit tästä pyytää uuden <a href="sivut/muutos.html" target="blank" style="color:dodgerblue">Sähköpostiisi</a>.</p>
+                  
+                    <div class="clearfix">
+                      <button type="button" id="palaa_kir" class="cancelbtn">Palaa</button>
+                      <button type="submit" id="kirjaudu_sisaan" class="signupbtn">Kirjaudu sisään</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+        <script type="text/javascript" src="java/index_java.js"></script>
+    </body>
+</html>
